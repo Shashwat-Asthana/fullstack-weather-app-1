@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Weather App</h1>
+            <form action="/" method="POST">
+                <input type="text" name="cityName" placeholder="Enter city name">
+                <button type="submit">Get Weather</button>
+            </form>
+            <div class="weather-info">
+                <!-- Weather information will be displayed here -->
+               <p>Welcome to our Weather App! Enter any city to get the latest weather data, including temperature. Powered by the OpenWeather API, our app provides accurate and reliable weather information to help you stay prepared.</p>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
